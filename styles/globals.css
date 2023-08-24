@@ -573,6 +573,7 @@ footer {
   background: var(--call-to-action, #a259ff);
   white-space: nowrap;
   margin: auto;
+  border: none;
 }
 
 /* Auction Details End */
