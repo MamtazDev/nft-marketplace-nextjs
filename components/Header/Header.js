@@ -23,9 +23,6 @@ const Header = () => {
             <span className="navbar-toggler-icon">
               <img src={menu.src} alt="Menu" />
             </span>
-            <span className="">
-              <img src={menu.src} alt="Menu" />
-            </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto align-items-center">
@@ -40,9 +37,9 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" href="/create-auction">
                   Create Auction
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="connectBtn" href="">

@@ -5,6 +5,7 @@ import discordLogo from "@/public/assets/images/discordLogo.png";
 import youtubeLogo from "@/public/assets/images/youtubeLogo.png";
 import twitterLogo from "@/public/assets/images/twitterLogo.png";
 import instagramLogo from "@/public/assets/images/instagramLogo.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -39,11 +40,14 @@ const Footer = () => {
           <div>
             <div className="footerMenu">
               <span className="d-block">Explore</span>
-              <a href="liveAuction.html">Auctions</a>
-              <a href="profile.html">Profile</a>
-              <a href="createAuction.html">Create Auction</a>
+              <Link href="/live-auction">Auctions</Link>
+              <Link href="/profile">Profile</Link>
+              <Link href="/create-auction">Create Auction</Link>
             </div>
           </div>
+        </div>
+        <div class="footerOuter">
+          <p>Ⓒ NFT Market. Use this template freely.</p>
         </div>
       </div>
     </footer>

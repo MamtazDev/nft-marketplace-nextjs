@@ -188,7 +188,6 @@ h2 {
 /* Header End */
 
 /* Footer Start*/
-
 footer {
   background-color: #3b3b3b;
   padding-top: 40px;
@@ -197,6 +196,16 @@ footer {
 
 .footerInner {
   gap: 80px;
+  border-bottom: 1px solid #747474;
+  padding-bottom: 30px;
+}
+
+.footerOuter p {
+  color: #ccc;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%;
 }
 
 .footerInner p {
@@ -230,6 +239,23 @@ footer {
 
 .footerMenu a:hover {
   color: #dfbff1;
+}
+
+.socialLink {
+  overflow: hidden;
+}
+
+.socialLink img {
+  transition: 0.3s ease-in-out;
+}
+
+.socialLink img:hover {
+  transform: scale(1.2);
+}
+
+.footerOuter {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .socialLink {
@@ -346,6 +372,14 @@ footer {
 }
 
 .boxBottom article a {
+  color: var(--white, #fff);
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  transition: 0.3s ease-in-out;
+}
+.boxBottom article span {
   color: var(--white, #fff);
   font-family: var(--mono);
   font-size: 16px;
@@ -632,6 +666,61 @@ footer {
 }
 
 /* Profile Page End */
+
+/* create auction start */
+
+.createAuction {
+  color: white;
+}
+.createAuction .shade {
+  background-color: #161616;
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+}
+.createAuction input,
+select,
+.pppp {
+  background-color: #1d1d20;
+  border: 2px solid #050505;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+}
+.createAuction .row button {
+  background-color: #1d1d20;
+  border: 2px solid #050505;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+}
+.gated_divider {
+  position: relative;
+  z-index: 99999;
+}
+.gated_divider::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  background-color: gray;
+  height: 1px;
+  z-index: -1;
+}
+.apv_btn {
+  background-color: #ea7b36 !important;
+}
+.ggggg {
+  position: relative;
+}
+.ggggg button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 /* Live Auction Start */
 .createAuction h3 {

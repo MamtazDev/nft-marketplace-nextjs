@@ -1,7 +1,13 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const DiscoverMore = () => {
+  const router = useRouter();
+
+  const handleLink = () => {
+    router.push("/profile");
+  };
   return (
     <section>
       <div className="m_all">
@@ -37,7 +43,7 @@ const DiscoverMore = () => {
                           src="./assets/images/moonDancer.png"
                           alt="Avatar"
                         />
-                        <Link href="/profile">MoonDancer</Link>
+                        <span onClick={handleLink}>NebulaKid</span>
                       </div>
                     </article>
                     <div className="entryBids d-flex justify-content-between align-items-center">
@@ -67,7 +73,8 @@ const DiscoverMore = () => {
                       <p>Life On Edena</p>
                       <div className="d-flex align-items-center gap_12 mt-2">
                         <img src="./assets/images/nebulaKid.png" alt="Avatar" />
-                        <Link href="/profile">NebulaKid</Link>
+                        {/* <Link href="/profile">NebulaKid</Link> */}
+                        <span onClick={handleLink}>NebulaKid</span>
                       </div>
                     </article>
                     <div className="entryBids d-flex justify-content-between align-items-center">
@@ -97,7 +104,7 @@ const DiscoverMore = () => {
                       <p>AstroFiction</p>
                       <div className="d-flex align-items-center gap_12 mt-2">
                         <img src="./assets/images/spaceone.png" alt="Avatar" />
-                        <Link href="/profile">Spaceone</Link>
+                        <span onClick={handleLink}>NebulaKid</span>
                       </div>
                     </article>
                     <div className="entryBids d-flex justify-content-between align-items-center">
