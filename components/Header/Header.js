@@ -1,14 +1,16 @@
 import Link from "next/link";
 import React from "react";
+import logo from "@/public/assets/images/logo.png";
+import menu from "@/public/assets/images/burgerMenu.png";
 
 const Header = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
         <div className="container headerContainer">
-          <a className="navbar-brand" href="index.html">
-            <img src="./assets/images/logo.png" alt="NFTLUB" />
-          </a>
+          <Link className="navbar-brand" href="/">
+            <img src={logo.src} alt="NFTLUB" />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -19,18 +21,18 @@ const Header = () => {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon">
-              <img src="./assets/images/burgerMenu.png" alt="Menu" />
+              <img src={menu.src} alt="Menu" />
             </span>
             <span className="">
-              <img src="./assets/images/burgerMenu.png" alt="Menu" />
+              <img src={menu.src} alt="Menu" />
             </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="index.html">
+                <Link className="nav-link" aria-current="page" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/profile">

@@ -1,4 +1,10 @@
 import React from "react";
+import storeFront from "@/public/assets/images/storeFront.png";
+import footerLogo from "@/public/assets/images/footerLogo.png";
+import discordLogo from "@/public/assets/images/discordLogo.png";
+import youtubeLogo from "@/public/assets/images/youtubeLogo.png";
+import twitterLogo from "@/public/assets/images/twitterLogo.png";
+import instagramLogo from "@/public/assets/images/instagramLogo.png";
 
 const Footer = () => {
   return (
@@ -7,8 +13,8 @@ const Footer = () => {
         <div className="footerInner d-flex justify-content-center">
           <div>
             <div className="d-flex align-items-center  gap_12 mb-4">
-              <img src="./assets/images/storeFront.png" alt="Store" />
-              <img src="./assets/images/footerLogo.png" alt="Logo" />
+              <img src={storeFront.src} alt="Store" />
+              <img src={footerLogo.src} alt="Logo" />
             </div>
             <p className="mb-4">
               NFT marketplace UI created
@@ -17,19 +23,16 @@ const Footer = () => {
             <p className="mb-3">Join our community</p>
             <div className="socialLink d-flex align-items-center gap-2">
               <a href="https://discord.com/invite/eQxkYTNxSp">
-                <img src="./assets/images/discordLogo.png" alt="Discord Link" />
+                <img src={discordLogo.src} alt="Discord Link" />
               </a>
               <a href="https://www.youtube.com/channel/UCXqr0Ca-b73rU9zcpSBJ5cw">
-                <img src="./assets/images/youtubeLogo.png" alt="Youtube Link" />
+                <img src={youtubeLogo.src} alt="Youtube Link" />
               </a>
               <a href="https://twitter.com/animaapp?lang=en">
-                <img src="./assets/images/twitterLogo.png" alt="Twitter Link" />
+                <img src={twitterLogo.src} alt="Twitter Link" />
               </a>
               <a href="https://www.instagram.com/animaapp/?hl=en">
-                <img
-                  src="./assets/images/instagramLogo.png"
-                  alt="Instagram Link"
-                />
+                <img src={instagramLogo.src} alt="Instagram Link" />
               </a>
             </div>
           </div>
