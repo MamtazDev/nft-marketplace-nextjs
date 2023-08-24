@@ -572,6 +572,7 @@ footer {
   border-radius: 20px;
   background: var(--call-to-action, #a259ff);
   white-space: nowrap;
+  margin: auto;
 }
 
 /* Auction Details End */
