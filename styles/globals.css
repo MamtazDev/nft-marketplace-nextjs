@@ -42,6 +42,10 @@ input {
   border: none;
 }
 
+input:focus-visible {
+  outline: none;
+}
+
 button {
   outline: none;
   border-width: nopne;
@@ -116,9 +120,7 @@ h2 {
 }
 
 /* Header Start */
-.navbar {
-  background-color: #2b2b2b !important;
-}
+
 .headerContainer {
   max-width: 1180px !important;
 }
@@ -541,11 +543,7 @@ footer {
 /* Auction Details End */
 
 /* Live Auction Start */
-.liveAuction_title {
-  background-color: #2b2b2b;
-  padding: 80px 0;
-}
-.liveAuction_title h3 {
+.liveAuction h3 {
   color: var(--white, #fff);
   font-family: var(--sans);
   font-size: 51px;
@@ -554,19 +552,96 @@ footer {
   text-transform: capitalize;
 }
 
-.liveAuction_title p {
+.liveAuction p {
   color: var(--white, #fff);
   font-family: var(--sans);
   font-size: 22px;
   font-weight: 400;
   line-height: 160%;
 }
-.liveAuction {
-  background-color: #3b3b3b;
-  padding: 80px 0;
-}
 
 /* Live Auction End */
+
+/* Profile Page Start */
+
+.profileImg img {
+  margin-top: -60px;
+  border-radius: 20px;
+}
+
+.proHeader h2 {
+  color: var(--white, #fff);
+  font-family: var(--sans);
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+
+.proHeader p {
+  color: var(--white, #fff);
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.proHeader span {
+  color: var(--white, #fff);
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.profileOutter {
+  color: #3b3b3b;
+}
+
+.created {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--caption-label-text, #858584);
+}
+
+.created p {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.created span {
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #858584;
+}
+
+.personalBid {
+  background: var(--background-secondary, #3b3b3b);
+}
+
+/* Profile Page End */
+
+/* Live Auction Start */
+.createAuction h3 {
+  color: var(--white, #fff);
+  font-family: var(--sans);
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: capitalize;
+}
 
 @media only screen and (min-width: 1440px) {
 }
@@ -604,6 +679,7 @@ footer {
   .container {
     max-width: 690px;
   }
+
   .navbar-nav {
     gap: 15px;
   }
@@ -634,6 +710,54 @@ footer {
     flex-direction: column;
     gap: 25px;
   }
+
+  .auctionDetail h3 {
+    font-size: 38px;
+  }
+
+  .auctionDetail span,
+  .createdBy span,
+  .orbitTxt {
+    font-size: 16px;
+  }
+
+  .timer p {
+    font-size: 30px;
+  }
+
+  .orbitTxt {
+    font-weight: 400px;
+  }
+
+  .bidInput input {
+    max-width: 100px;
+  }
+
+  .placeBid {
+    padding: 20px;
+  }
+
+  .liveAuction h3,
+  .createAuction h3 {
+    font-size: 38px;
+  }
+
+  .proHeader h2 {
+    font-size: 38px;
+  }
+
+  .proHeader p,
+  .proHeader span {
+    font-size: 22px;
+  }
+
+  .created p {
+    font-size: 16px;
+  }
+
+  .created span {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -660,6 +784,27 @@ footer {
   .auctionBidInner span,
   .auctionBidInner p {
     text-align: start;
+  }
+
+  .liveAuction h3,
+  .createAuction h3 {
+    font-size: 28px;
+  }
+
+  .liveAuction p {
+    font-size: 16px;
+  }
+
+  .proHeader h2 {
+    font-size: 28px;
+  }
+
+  .proHeader span {
+    font-size: 16px;
+  }
+
+  .profileImg {
+    text-align: center;
   }
 }
 

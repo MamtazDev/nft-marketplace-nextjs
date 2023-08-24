@@ -102,45 +102,49 @@ const LiveAuction = () => {
   return (
     <div>
       <section>
-        <div className="liveAuction_title">
+        {/* <div className="liveAuction_title">
           <div className="container">
             <h3>Live Auctions</h3>
             <p>Discover the auctions, currently live</p>
           </div>
-        </div>
-        <div class="liveAuction">
+        </div> */}
+        <div class="liveAuction mt_80">
           <div class="container">
-            <div class="row g-4">
-              {datas.map((data, index) => (
-                <div class="col-12 col-md-6 col-lg-4">
-                  <div key={index} class="discoverInnerBox">
-                    <img
-                      class="img-fluid w-100"
-                      src={data.pic}
-                      alt="Distance Galaxy"
-                    />
-                    <div class="boxBottom h-100">
-                      <article class="mb_25">
-                        <p>{data.name}</p>
-                        <div class="d-flex align-items-center gap_12 mt-2">
-                          <img src={data.author} alt="Avatar" />
-                          <a href="profile.html">{data.authorName}</a>
-                        </div>
-                      </article>
-                      <div class="entryBids d-flex justify-content-between align-items-center">
-                        <div>
-                          <span>Entry Fee</span>
-                          <p>{data.entryFee} ETH</p>
-                        </div>
-                        <div>
-                          <span>Bids</span>
-                          <p>{data.bids}</p>
+            <h3>Live Auctions</h3>
+            <p>Discover the auctions, currently live</p>
+            <div class="mt_80">
+              <div class="row g-4">
+                {datas.map((data, index) => (
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div key={index} class="discoverInnerBox">
+                      <img
+                        class="img-fluid w-100"
+                        src={data.pic}
+                        alt="Distance Galaxy"
+                      />
+                      <div class="boxBottom h-100">
+                        <article class="mb_25">
+                          <p>{data.name}</p>
+                          <div class="d-flex align-items-center gap_12 mt-2">
+                            <img src={data.author} alt="Avatar" />
+                            <a href="profile.html">{data.authorName}</a>
+                          </div>
+                        </article>
+                        <div class="entryBids d-flex justify-content-between align-items-center">
+                          <div>
+                            <span>Entry Fee</span>
+                            <p>{data.entryFee} ETH</p>
+                          </div>
+                          <div>
+                            <span>Bids</span>
+                            <p>{data.bids}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
